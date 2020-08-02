@@ -13,7 +13,7 @@ namespace CalculatorTest.Services
             string cs = "Data Source=Database\\log.db";
 
             using var con = new SqliteConnection(cs);
-            SqliteCommand com = con.CreateCommand();
+            using SqliteCommand com = con.CreateCommand();
             con.Open();
 
             const string query = "INSERT INTO LogEntries(LeftOperand, RightOperand, Operation, IpAddress, Timestamp) " +
