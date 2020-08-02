@@ -1,0 +1,8 @@
+﻿CREATE TABLE LogEntries(
+  Id INTEGER PRIMARY KEY AUTOINCREMENT,
+  LeftOperand TEXT NOT NULL,
+  RightOperand TEXT NULL,
+  Operation TEXT NOT NULL,
+  IpAddress TEXT NOT NULL,
+  Timestamp TEXT NOT NULL
+);

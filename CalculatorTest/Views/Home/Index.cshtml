@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+    <div ng-app="calculatorApp" ng-controller="calculatorCtrl">
+        <div class="calculator-screen">{{displayValue()}}</div>
+        <table>
+            <tr ng-repeat="row in grid">
+                <td ng-repeat="item in row" ><button class="calculator-button" ng-click="buttonClicked(item)">{{item}}</button></td>
+            </tr>
+        </table>
+    </div>
+
